@@ -2,6 +2,8 @@
 Liam Heffernan (lheffern@purdue.edu) - 26/09/23
 Chris James (c.james4@uq.edu.au) - 26/09/23
 
+Runs a PITOT3 simulation using the CJ conditions as the driver gas.
+
 """
 
 #----------------------------------------------------------------------------------------------
