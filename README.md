@@ -5,7 +5,7 @@ The HYPULSE driver script along with an extensive library of examples using PITO
 -- There are three types of driver functions:
 1. HYPULSE_driver(): Standard fixed volume driver operation. Takes in fill conditions and composition and returns the plateau state.
 2. HYPULSE_driver_equivalentconditions(): Returns the equivalent sound speed and pressure for a passive burst fixed volume driver as per \cite{}.
-3. HYPULSE_driver_exp_tuned(): Returns the effective sound speed and pressure based on the regressions done in \cite{}.
+3. HYPULSE_driver_exp_tuned(): Returns the effective sound speed and pressure based on the regressions done in Heffernan, L., James, C.M. and Jewell, J.S. (2024). HYPULSE Modelling Using Quasi-0D Analytical Framework. AIAA AVIATION FORUM AND ASCEND 2024. doi:https://doi.org/10.2514/6.2024-4566.
 
 Each driver functions accepts the same inputs: the fill pressure, temperature, and composition for states 400 and 100.
 
