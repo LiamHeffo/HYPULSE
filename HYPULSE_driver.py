@@ -217,10 +217,8 @@ def HYPULSE_driver(P4, T4, q4, P100, T100, q100):
 		# plt.gca().invert_xaxis()
 		# plt.legend()
 		# # plt.show()
-		plt.savefig('Mach8Isentrope.png', bbox_inches='tight')
+		# plt.savefig('Mach8Isentrope.png', bbox_inches='tight')
 
-
-		
 		return P400, u400, a400, V400, T400
 
 
@@ -460,136 +458,6 @@ def HYPULSE_driver_equivalentconditions(P4, T4, q4, P100, T100, q100):
 		# outfile.close()
 		
 		return 19451*ae, Te, pe2, Te2
-
-def JF16_driver(P100, T100, q100):
-		"""
-		Purpose, What it does, whatever.
-		"""
-
-		mech = 'sandiego20161214_H2only.cti'
-
-		# State 100 gas object
-		gas100 = ct.Solution(mech)
-		gas = ct.Solution(mech)
-		gas100.TPX = T100, P100, q100
-		a100_fr = soundspeed_fr(gas100)
-		D100 = gas100.density
-		gamma100_fr =  a100_fr*a100_fr*D100/P100;
-
-		print('\nDetonation Driver Fill State:');
-		print(' Composition ' + q100)
-		print(' Pressure %.2f (MPa) ' % (P100*10**(-6)) )
-		print(' Temperature %.2f (K) ' % (T100) )
-
-		print('\nComputing CJ state and isentrope for '+q100+' using '+mech)
-		
-		# compute CJ speed
-		cj_speed = CJspeed(P100, T100, q100, mech);
-		
-		# compute equilibrium CJ state
-		gas = PostShock_eq(cj_speed, P100, T100, q100, mech)
-
-		T2 = gas.T
-		P2 = gas.P
-		D2 = gas.density
-		V2 = 1./D2
-		S2  = gas.entropy_mass
-		w2 = D100*cj_speed/D2
-		u2 = cj_speed-w2
-		a2_eq = soundspeed_eq(gas)
-		a2_fr = soundspeed_fr(gas)
-		gamma2_fr =  a2_fr*a2_fr*D2/P2;
-		gamma2_eq =  a2_eq*a2_eq*D2/P2;
-
-		print('CJ speed = %.2f (m/s)' % (cj_speed))
-		print ('CJ State')
-		print(' Pressure %.2f (MPa) ' % (P2*10**(-6)) )
-		print(' Temperature %.2f (K) ' % (T2) )
-		#print(' Density %.3f (kg/m3) ' % (D2) )
-		#print(' Entropy %.3f (J/kg-K) ' % (S2) )
-		#print(' w2 (frozen) %.2f (m/s)' % (w2) )
-		print(' u2 (frozen) %.2f (m/s)' % (u2) )
-		#print(' a2 (frozen) %.2f (m/s)' % (a2_fr) )
-		print(' a2 (equilibrium) %.2f (m/s)' % (a2_eq) )
-		#print(' gamma2 (frozen) %.4f '% (gamma2_fr) )   
-		print(' gamma2 (equilibrium) %.4f '% (gamma2_eq) )   
-
-		#compute the effective value of q based on two-gamma model
-		M1 = cj_speed/a100_fr;
-		eparam = a100_fr**2*(M1**(-2)*(gamma2_eq/gamma100_fr)**2 \
-*(1+gamma100_fr*M1**2)**2/(2*(gamma2_eq**2-1))-1/(gamma100_fr-1)-M1**2/2)
-		print('Detonation CJ Mach number %.2f' % (M1))
-		print('2-gamma energy parameter q %.3f (J/kg)' % (eparam))
-
-		# Find points on the isentrope connected to the CJ state, evaluate velocity
-		# in Taylor wave using trapezoidal rule to evaluate the Riemann function
-		npoints=50000
-		vv = V2
-		V = np.zeros(npoints,float)
-		P = np.zeros(npoints,float)
-		D = np.zeros(npoints,float)
-		a = np.zeros(npoints,float)
-		u = np.zeros(npoints,float)
-		T = np.zeros(npoints,float)
-		V[1] = V2
-		P[1] = P2
-		D[1] = D2
-		a[1] = a2_eq
-		u[1] = u2
-		T[1] = T2
-		print('\nGenerating points on isentrope and computing Taylor wave velocity')
-
-		i = 1
-		has_converged = False
-
-		while u[i] > 0 and i < npoints:
-			i = i+1
-			vv = vv*1.0001
-			x = gas.X
-			gas.SVX = S2, vv, x
-			gas.equilibrate('SV')
-			P[i] = gas.P
-			D[i] = gas.density
-			V[i] = 1/D[i]
-			T[i] = gas.T
-			a[i] = soundspeed_eq(gas)
-			u[i] = u[i-1] + 0.5*(P[i]-P[i-1])*(1./(D[i]*a[i]) + 1./(D[i-1]*a[i-1]))
-
-
-		nfinal = i
-		P400 = P[nfinal]
-		u400 = u[nfinal]
-		a400 = a[nfinal]
-		V400 = V[nfinal]
-		T400 = T[nfinal]
-
-		# State 400: 
-		print('State 400 ')
-		print(' Pressure %.2f (MPa)' % (P400*10**(-6)))
-		print(' Temperature %.2f (K)' % (T400))
-		#print(' Volume %.2f (m3/kg)' % (V400))
-		print(' Velocity %.2f (m/s)' % (u400))
-		
-		# evaluate final state 400 to get sound speeds and effective gammas
-		x = gas.X
-		gas.SVX = S2, V400, x
-		gas.equilibrate('SV')
-		a400_fr = soundspeed_fr(gas);
-		gamma400_fr =  a400_fr**2/(P400*V400);
-		gamma400_eq =  a400**2/(V400*P400);
-		#print(' Sound speed (frozen) %.2f (m/s)' % (a400_fr))
-		print(' Sound speed (equilibrium) %.2f (m/s)' % (a400))
-		#print(' Gamma (frozen) %.4f' % (gamma400_fr))
-		print(' Gamma (equilibrium) %.4f' % (gamma400_eq))
-
-		# Calculating cold-driver-equivalent numbers from Lu:
-		pe = P400*(1 + (gamma400_eq - 1)/2*(u400/a400_fr))**(2*gamma400_eq/(gamma400_eq - 1))
-		ae = a400*(1 + (gamma400_eq - 1)/2*(u400/a400_fr))
-		print('State 400 Equivalent')
-		print(' pe = %.2f (MPa)' % (pe*10**(-6)))
-		print(' ae = %.2f (m/s)' % (ae) )
-		
-		return P400, u400, a400, V400, T400, ae, pe
 
 
 def HYPULSE_SET_driver(P4, T4, q4, P100, T100, q100):
