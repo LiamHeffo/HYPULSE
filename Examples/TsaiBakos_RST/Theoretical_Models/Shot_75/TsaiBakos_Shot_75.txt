@@ -1,0 +1,29 @@
+PITOT3 Version 16-Dec-2023 doing a reflected_shock_tunnel calculation.
+Calculation mode is 'fully_theoretical'.
+Facility is 'HYPULSE_rst_Mach_8_to_10_nozzle_area_ratio_175'.
+Driver condition is 'custom_from_dict'. Driver gas model is CEAGas.
+Driver gas composition is {'Ar': 0.65, 'O2': 0.117, 'H2': 0.233} (by moles) (gam = 1.44, R = 275.50 J/kg K).
+Nozzle area ratio is 175.0.
+Test gas (s1) is n2-o2-with-ions. Test gas gas model is CEAGas.
+Test gas composition is {'N2': 0.79, 'O2': 0.21} (by moles) (gam = 1.40, R = 288.20 J/kg K)
+vs1 = 2223.26 m/s, Ms1 = 6.41
+state p         T       a     v       M     rho      pitot_p stgn_p Ht     h    
+      Pa        K       m/s   m/s           kg/m^3   kPa     MPa    MJ/kg  MJ/kg
+s4    1.959e+07 3310.7  1148  0.0     0.00  21.47800 19590   19.59  2.55   2.55 
+s1    19999.95  298.15  347   0.0     0.00  0.23276  20.0    0.02   0.00   0.00 
+s2    990880.0  2305.4  915   1876.2  2.05  1.49090  5484.5  8.40   4.17   2.41 
+s3    990880.0  1274.5  725   1876.2  2.59  2.82190  9496.5  19.49  2.55   0.79 
+s5    7.736e+06 3897.2  1176  0.0     0.00  6.71310  7736.3  7.74   5.18   5.18 
+s5d   1.425e+07 4601.9  1344  0.0     0.00  11.24200 14253   14.25  3.73   3.73 
+s6    4.401e+06 3576.4  1122  1122.1  1.00  4.19500  7797.4  7.80   5.18   4.56 
+s8    1563.212  628.30  498   3112.6  6.25  8.63e-03 80.4    7.80   5.18   0.34 
+s10f  70302.43  5033.2  1410  554.4   0.39  4.85e-02 78.0    0.08   -     -     
+s10e  75272.0   3359.9  1096  369.5   0.34  7.27e-02 80.4    0.08   5.18   5.12 
+The freestream (s8) total temperature (Tt) is 3901.89 K.
+The freestream (s8) flight equivalent velocity (Ue) is 3220.22 m/s.
+Freestream (s8) unit Reynolds number is 846682.23 /m (related mu is 3.17e-05 Pa.s).
+Post normal shock equilibrium (s10e) unit Reynolds number is 262055.33 /m (related mu is 1.03e-04 Pa.s).
+Species in the freestream state (s8) at equilibrium (by moles):
+{'N2': 0.79, 'O2': 0.21}
+Species in the shock layer at equilibrium (s10e) (by moles):
+{'N': 1.079e-04, 'N2': 0.715, 'N2O': 2.312e-06, 'O': 0.129, 'O2': 0.108, 'NO': 0.0481, 'NO2': 1.395e-05}

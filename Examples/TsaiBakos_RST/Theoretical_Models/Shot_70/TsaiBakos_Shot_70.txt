@@ -1,0 +1,29 @@
+PITOT3 Version 16-Dec-2023 doing a reflected_shock_tunnel calculation.
+Calculation mode is 'fully_theoretical'.
+Facility is 'HYPULSE_rst_Mach_8_to_10_nozzle_area_ratio_175'.
+Driver condition is 'custom_from_dict'. Driver gas model is CEAGas.
+Driver gas composition is {'H2O': 0.405, 'OH': 0.0802, 'Ar': 0.354, 'HO2': 2.454e-04, 'O': 0.0136, 'O2': 0.0219, 'H2': 0.0945, 'H': 0.0303, 'H2O2': 5.076e-05} (by moles) (gam = 1.08, R = 347.03 J/kg K).
+Nozzle area ratio is 175.0.
+Test gas (s1) is n2-o2-with-ions. Test gas gas model is CEAGas.
+Test gas composition is {'N2': 0.79, 'O2': 0.21} (by moles) (gam = 1.40, R = 288.20 J/kg K)
+vs1 = 2400.35 m/s, Ms1 = 6.92
+state p         T       a     v       M     rho      pitot_p stgn_p Ht     h    
+      Pa        K       m/s   m/s           kg/m^3   kPa     MPa    MJ/kg  MJ/kg
+s4    2.483e+07 3985.0  1270  0.0     0.00  17.95400 24829   24.83  7.51   7.51 
+s1    57808.43  298.15  347   0.0     0.00  0.67278  57.8    0.06   0.00   0.00 
+s2    3.353e+06 2589.1  965   2040.7  2.12  4.49059  19483   31.61  4.90   2.82 
+s3    3.353e+06 3182.3  1102  2040.6  1.85  3.19530  14589   19.41  7.17   5.09 
+s5    2.722e+07 4407.1  1260  0.0     0.00  20.75200 27215   27.22  6.05   6.05 
+s5d   2.061e+07 4127.2  1312  0.0     0.00  13.95800 20609   20.61  8.41   8.41 
+s6    1.545e+07 4032.4  1198  1197.7  1.00  12.98600 27422   27.42  6.06   5.34 
+s8    5909.404  770.35  548   3335.6  6.08  2.66e-02 285.3   27.42  6.06   0.49 
+s10f  250592.4  5677.7  1489  579.7   0.39  0.15314  277.3   0.28   -     -     
+s10e  267460.0  3751.3  1175  389.8   0.33  0.22777  285.3   0.29   6.06   5.98 
+The freestream (s8) total temperature (Tt) is 4412.32 K.
+The freestream (s8) flight equivalent velocity (Ue) is 3480.75 m/s.
+Freestream (s8) unit Reynolds number is 2432677.76 /m (related mu is 3.65e-05 Pa.s).
+Post normal shock equilibrium (s10e) unit Reynolds number is 793812.01 /m (related mu is 1.12e-04 Pa.s).
+Species in the freestream state (s8) at equilibrium (by moles):
+{'N2': 0.79, 'O2': 0.21, 'NO': 1.182e-06}
+Species in the shock layer at equilibrium (s10e) (by moles):
+{'N': 3.445e-04, 'N2': 0.698, 'N2O': 5.442e-06, 'O': 0.158, 'O2': 0.0846, 'NO': 0.059, 'NO2': 2.363e-05, 'NO+': 9.404e-07}
