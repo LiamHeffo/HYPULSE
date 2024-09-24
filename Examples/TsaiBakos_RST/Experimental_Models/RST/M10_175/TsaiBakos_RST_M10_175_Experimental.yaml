@@ -1,0 +1,20 @@
+
+# initial code set up
+mode : 'fully_experimental'
+
+output_filename : 'TsaiBakos_RST_M10_Experimental'
+
+# facility set up
+facility : 'HYPULSE_rst_Mach_8_to_10_nozzle_area_ratio_175'
+driver_condition : 'HYPULSE_RST_M10_driver_condition'
+
+# shock tube
+test_gas_gas_model : 'CEAGas'
+test_gas_name : 'n2-o2-with-ions'
+p1 : 70000 # Pa
+vs1 : 2218 # m/s
+
+
+# nozzle area ratio
+area_ratio : 175
+

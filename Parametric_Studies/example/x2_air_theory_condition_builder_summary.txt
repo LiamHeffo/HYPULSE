@@ -1,0 +1,136 @@
+# Summary of PITOT3 condition builder. Performed using version 09-Jan-2023.
+2 tests ran. 2 (100.0%) were successful.
+Calculations were performed for an expansion tube with a nozzle.
+Only the driver condition x2-lwp-2.5mm-100He-0-empirical was tested.
+Variable area_ratio varies from 5.64 - 5.64 m/s.
+Variable p1 varies from 1500.00 - 1500.00 Pa.
+Variable p5 varies from 0.10 - 100.00 Pa.
+Variable vs1 varies from 6573.90 - 6573.90 m/s.
+Variable vs2 varies from 9658.69 - 16686.85 m/s.
+Variable Ht varies from 61.84 - 144.70 MJ/kg.
+Variable h varies from 3.91 - 11.11 MJ/kg.
+Variable Ue varies from 11120.86 - 17011.51 m/s.
+Variable pitot_p varies from 5829.33 - 480073.19 Pa.
+Variable total_p varies from 872.62 - 223474.35 MPa.
+Variable p2 varies from 698000.00 - 698000.00 Pa.
+Variable T2 varies from 7342.95 - 7342.95 K.
+Variable rho2 varies from 2.2735e-01 - 2.2735e-01 kg/m**3.
+Variable v2 varies from 6069.12 - 6069.12 m/s.
+Variable M2 varies from 3.23 - 3.23.
+Variable a2 varies from 1880.60 - 1880.60 m/s.
+Variable gamma2 varies from 1.04 - 1.04.
+Variable R2 varies from 418.11 - 418.11 J/kg.K.
+Variable Ht2 varies from 39.90 - 39.90 MJ/kg.
+Variable h2 varies from 21.48 - 21.48 MJ/kg.
+Variable p3 varies from 698000.00 - 698000.00 Pa.
+Variable T3 varies from 637.67 - 637.67 K.
+Variable rho3 varies from 5.2694e-01 - 5.2694e-01 kg/m**3.
+Variable v3 varies from 6069.11 - 6069.11 m/s.
+Variable M3 varies from 4.08 - 4.08.
+Variable a3 varies from 1485.80 - 1485.80 m/s.
+Variable p7 varies from 107.12 - 64985.22 Pa.
+Variable T7 varies from 2702.33 - 5941.43 K.
+Variable rho7 varies from 1.2028e-04 - 2.8518e-02 kg/m**3.
+Variable v7 varies from 9658.69 - 16686.85 m/s.
+Variable M7 varies from 6.00 - 16.63.
+Variable a7 varies from 1003.60 - 1610.10 m/s.
+Variable p6 varies from 310.72 - 102010.00 Pa.
+Variable T6 varies from 9770.39 - 11486.65 K.
+Variable rho6 varies from 2.5913e-05 - 1.8002e-02 kg/m**3.
+Variable v6 varies from 9031.90 - 15934.57 m/s.
+Variable M6 varies from 3.42 - 4.27.
+Variable a6 varies from 2637.80 - 3734.40 m/s.
+Variable p8 varies from 15.42 - 8640.89 Pa.
+Variable T8 varies from 2326.79 - 4935.71 K.
+Variable rho8 varies from 2.1208e-05 - 4.8488e-03 kg/m**3.
+Variable v8 varies from 10072.23 - 16779.96 m/s.
+Variable M8 varies from 7.05 - 18.69.
+Variable a8 varies from 897.70 - 1428.80 m/s.
+Variable gamma8 varies from 1.32 - 1.36.
+Variable R8 varies from 312.40 - 361.06 J/kg.K.
+Variable unit_Re8 varies from 4.4855e+03 - 3.3640e+05 /m.
+Variable p10f varies from 5848.40 - 473850.49 Pa.
+Variable T10f varies from 14688.23 - 20488.00 K.
+Variable rho10f varies from 9.1375e-04 - 8.9349e-02 kg/m**3.
+Variable v10f varies from 389.47 - 546.59 m/s.
+Variable M10f varies from 0.15 - 0.23.
+Variable a10f varies from 2387.51 - 2582.51 m/s.
+Variable p10e varies from 5668.40 - 458780.00 Pa.
+Variable T10e varies from 12785.72 - 13708.01 K.
+Variable rho10e varies from 3.9766e-04 - 5.7113e-02 kg/m**3.
+Variable v10e varies from 855.12 - 894.90 m/s.
+Variable M10e varies from 0.22 - 0.28.
+Variable a10e varies from 3098.60 - 4119.10 m/s.
+Variable unit_Re10e varies from 6.2998e+03 - 1.7470e+05 /m.
+Variable p10c varies from 426.51 - 44396.00 Pa.
+Variable T10c varies from 4798.41 - 5885.03 K.
+Variable rho10c varies from 2.2781e-04 - 1.9484e-02 kg/m**3.
+Variable v10c varies from 9625.49 - 16150.66 m/s.
+Variable M10c varies from 5.99 - 11.21.
+Variable a10c varies from 1440.20 - 1607.60 m/s.
+Variable p10w varies from 4177.50 - 372710.00 Pa.
+Variable T10w varies from 11235.43 - 12059.60 K.
+Variable rho10w varies from 3.9665e-04 - 5.5732e-02 kg/m**3.
+Variable v10w varies from 4453.50 - 8649.94 m/s.
+Variable M10w varies from 1.56 - 2.48.
+Variable a10w varies from 2853.60 - 3484.00 m/s.
+Variable s2 Xe- varies from 0.0 - 0.0.
+Variable s2 XN- varies from 0.0 - 0.0.
+Variable s2 XO2+ varies from 6.5466e-07 - 6.5466e-07.
+Variable s2 XN varies from 0.3402 - 0.3402.
+Variable s2 XN2 varies from 0.3699 - 0.3699.
+Variable s2 XO+ varies from 4.1577e-05 - 4.1577e-05.
+Variable s2 XN2O varies from 1.2741e-06 - 1.2741e-06.
+Variable s2 XN2+ varies from 1.8431e-05 - 1.8431e-05.
+Variable s2 XO varies from 0.2800 - 0.2800.
+Variable s2 XO2 varies from 2.1284e-04 - 2.1284e-04.
+Variable s2 XNO varies from 8.5115e-03 - 8.5115e-03.
+Variable s2 XO- varies from 2.4877e-06 - 2.4877e-06.
+Variable s2 XN+ varies from 5.6940e-05 - 5.6940e-05.
+Variable s2 XNO2 varies from 0.0 - 0.0.
+Variable s2 XNO+ varies from 4.8275e-04 - 4.8275e-04.
+Variable s7 Xe- varies from 0.0 - 0.0.
+Variable s7 XN- varies from 0.0 - 0.0.
+Variable s7 XO2+ varies from 0.0 - 0.0.
+Variable s7 XN varies from 4.1790e-05 - 0.1882.
+Variable s7 XN2 varies from 0.4962 - 0.6835.
+Variable s7 XO+ varies from 0.0 - 5.0367e-06.
+Variable s7 XN2O varies from 0.0 - 0.0.
+Variable s7 XN2+ varies from 0.0 - 1.1146e-06.
+Variable s7 XO varies from 0.2510 - 0.3086.
+Variable s7 XO2 varies from 1.7695e-04 - 0.0508.
+Variable s7 XNO varies from 6.4673e-03 - 0.0146.
+Variable s7 XO- varies from 0.0 - 0.0.
+Variable s7 XN+ varies from 0.0 - 2.4890e-06.
+Variable s7 XNO2 varies from 0.0 - 0.0.
+Variable s7 XNO+ varies from 0.0 - 2.0737e-04.
+Variable s8 Xe- varies from 0.0 - 0.0.
+Variable s8 XN- varies from 0.0 - 0.0.
+Variable s8 XO2+ varies from 0.0 - 0.0.
+Variable s8 XN varies from 3.5700e-06 - 0.0743.
+Variable s8 XN2 varies from 0.5906 - 0.7230.
+Variable s8 XO+ varies from 0.0 - 0.0.
+Variable s8 XN2O varies from 0.0 - 0.0.
+Variable s8 XN2+ varies from 0.0 - 0.0.
+Variable s8 XO varies from 0.1550 - 0.3292.
+Variable s8 XO2 varies from 2.2462e-04 - 0.1105.
+Variable s8 XNO varies from 5.5502e-03 - 0.0115.
+Variable s8 XO- varies from 0.0 - 0.0.
+Variable s8 XN+ varies from 0.0 - 0.0.
+Variable s8 XNO2 varies from 0.0 - 0.0.
+Variable s8 XNO+ varies from 0.0 - 6.7825e-05.
+Variable s10e Xe- varies from 0.0834 - 0.4457.
+Variable s10e XN- varies from 0.0 - 3.1628e-05.
+Variable s10e XO2+ varies from 0.0 - 7.2956e-07.
+Variable s10e XN varies from 0.0772 - 0.6515.
+Variable s10e XN2 varies from 0.0 - 6.2175e-04.
+Variable s10e XO+ varies from 0.0116 - 0.0850.
+Variable s10e XN2O varies from 0.0 - 0.0.
+Variable s10e XN2+ varies from 3.6853e-07 - 8.4432e-05.
+Variable s10e XO varies from 0.0314 - 0.1809.
+Variable s10e XO2 varies from 0.0 - 1.5060e-06.
+Variable s10e XNO varies from 0.0 - 5.3909e-05.
+Variable s10e XO- varies from 0.0 - 1.2887e-05.
+Variable s10e XN+ varies from 0.0717 - 0.3607.
+Variable s10e XNO2 varies from 0.0 - 0.0.
+Variable s10e XNO+ varies from 3.2567e-07 - 6.3348e-05.

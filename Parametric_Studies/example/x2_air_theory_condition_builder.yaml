@@ -1,0 +1,27 @@
+# HYPULSE_RST_condition_builder.yaml: 
+# First condition builder example!
+# Liam Heffernan, based on a script by Chris James - (c.james4@uq.edu.au) - 06/01/23
+
+# initial code set up
+mode : 'fully_theoretical'
+output_filename : 'HYPULSE_RST_M8_condition_builder'
+no_of_processes : 12
+condition_builder_cleanup : False
+
+# facility set up
+facility : 'HYPULSE_rst_Mach_8_to_10_nozzle_area_ratio_175'
+driver_condition : 'HYPULSE_RST_M8_driver_condition'
+#driver_condition_list : ['x2-lwp-2.0mm-100He-0', 'x2-lwp-2.5mm-100He-0-empirical']
+
+# shock tube
+test_gas_gas_model : 'CEAGas'
+test_gas_name : 'n2-o2-with-ions'
+#p1 : 122000.0 # Pa
+
+p1_range : [10000.0, 1000000.0]
+p1_no_of_samples : 100
+p1_spacing : 'log'
+
+# nozzle area ratio
+area_ratio : 175
+

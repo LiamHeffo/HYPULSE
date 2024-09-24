@@ -1,0 +1,13 @@
+# PITOT3 input file created automatically by the function pitot3_input_yaml_file_creator 
+ 
+mode : 'fully_theoretical' 
+output_filename : 'HYPULSE_RST_M8_condition_builder_14' 
+no_of_processes : 12 
+condition_builder_cleanup : False 
+facility : 'HYPULSE_rst_Mach_8_to_10_nozzle_area_ratio_175' 
+test_gas_gas_model : 'CEAGas' 
+test_gas_name : 'n2-o2-with-ions' 
+area_ratio : 175 
+driver_condition : 'HYPULSE_RST_M8_driver_condition' 
+p1 : 19179.10261672489 
+test_number : 14 

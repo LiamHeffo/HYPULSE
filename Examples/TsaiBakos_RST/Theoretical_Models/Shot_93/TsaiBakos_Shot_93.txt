@@ -1,0 +1,29 @@
+PITOT3 Version 16-Dec-2023 doing a reflected_shock_tunnel calculation.
+Calculation mode is 'fully_theoretical'.
+Facility is 'HYPULSE_rst_Mach_8_to_10_nozzle_area_ratio_175'.
+Driver condition is 'custom_from_dict'. Driver gas model is CEAGas.
+Driver gas composition is {'Ar': 0.55, 'O2': 0.15, 'H2': 0.3} (by moles) (gam = 1.41, R = 303.72 J/kg K).
+Nozzle area ratio is 175.0.
+Test gas (s1) is n2-o2-with-ions. Test gas gas model is CEAGas.
+Test gas composition is {'N2': 0.79, 'O2': 0.21} (by moles) (gam = 1.40, R = 288.20 J/kg K)
+vs1 = 2585.71 m/s, Ms1 = 7.46
+state p         T       a     v       M     rho      pitot_p stgn_p Ht     h    
+      Pa        K       m/s   m/s           kg/m^3   kPa     MPa    MJ/kg  MJ/kg
+s4    1.066e+07 3219.2  1173  292.0   0.25  10.90700 11135   11.13  2.91   2.87 
+s1    8990.168  298.15  347   0.0     0.00  0.10463  9.0     0.01   0.00   0.00 
+s2    609300.0  2849.8  1001  2218.9  2.22  0.73764  3784.6  6.84   5.74   3.28 
+s3    609300.0  1355.9  776   2218.9  2.86  1.47960  6959.1  18.39  3.44   0.98 
+s5    5.155e+06 4529.5  1302  0.0     0.00  3.66570  5155.5  5.16   6.98   6.98 
+s5d   1.005e+07 5104.9  1463  0.0     0.00  6.48150  10049   10.05  4.90   4.90 
+s6    2.959e+06 4183.4  1238  1237.8  1.00  2.30810  5231.5  5.23   7.00   6.23 
+s8    1311.266  987.13  616   3538.2  5.74  4.61e-03 56.0    5.23   7.00   0.74 
+s10f  49228.83  6284.2  1555  600.0   0.39  2.72e-02 54.3    0.05   -     -     
+s10e  52789.0   3755.1  1211  381.8   0.32  4.27e-02 56.0    0.06   7.00   6.92 
+The freestream (s8) total temperature (Tt) is 4539.22 K.
+The freestream (s8) flight equivalent velocity (Ue) is 3741.05 m/s.
+Freestream (s8) unit Reynolds number is 377716.05 /m (related mu is 4.32e-05 Pa.s).
+Post normal shock equilibrium (s10e) unit Reynolds number is 142782.75 /m (related mu is 1.14e-04 Pa.s).
+Species in the freestream state (s8) at equilibrium (by moles):
+{'N2': 0.79, 'O2': 0.21, 'NO': 2.713e-05}
+Species in the shock layer at equilibrium (s10e) (by moles):
+{'N': 7.731e-04, 'N2': 0.672, 'N2O': 1.608e-06, 'O': 0.248, 'O2': 0.0401, 'NO': 0.04, 'NO2': 4.891e-06, 'NO+': 1.744e-06}

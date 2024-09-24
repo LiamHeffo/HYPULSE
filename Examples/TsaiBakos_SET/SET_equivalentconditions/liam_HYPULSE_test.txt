@@ -1,0 +1,32 @@
+PITOT3 Version 16-Dec-2023 doing an expansion_tube calculation.
+Calculation mode is 'fully_theoretical'.
+Facility is 'x2_nozzle'.
+Driver condition is 'custom_from_dict'. Driver gas model is CEAGas.
+Driver gas composition is {'H2O': 0.227, 'OH': 0.0568, 'He': 0.603, 'HO2': 1.705e-04, 'O': 0.0118, 'O2': 0.0164, 'H2': 0.0612, 'H': 0.0242, 'H2O2': 3.000e-05} (by moles) (gam = 1.11, R = 997.78 J/kg K).
+Nozzle area ratio is 16.0.
+Test gas (s1) is n2-o2-with-ions. Test gas gas model is CEAGas.
+Test gas composition is {'N2': 0.79, 'O2': 0.21} (by moles) (gam = 1.40, R = 288.20 J/kg K)
+Accelerator gas (s5) is air13species. Accelerator gas gas model is CEAGas.
+Accelerator gas composition is {'N2': 0.781, 'Ar': 0.0093, 'O2': 0.21} (by moles) (gam = 1.40, R = 287.11 J/kg K).
+vs1 = 3660.00 m/s, Ms1 = 10.56, vs2 = 8222.40 m/s, Ms2 = 23.75, vs1/vs2 ratio = 0.45, vs2/vs1 ratio = 2.25
+state p         T       a     v       M     rho      pitot_p stgn_p Ht     h    
+      Pa        K       m/s   m/s           kg/m^3   kPa     MPa    MJ/kg  MJ/kg
+s4    3.258e+07 4058.0  2208  0.0     0.00  8.04670  32582   32.58  7.92   7.92 
+s1    34437.09  298.15  347   0.0     0.00  0.40078  34.4    0.03   0.00   0.00 
+s2    4.797e+06 4389.7  1274  3246.9  2.55  3.55096  38043   92.13  11.88  6.61 
+s3    4.797e+06 3081.5  1884  3246.9  1.72  1.63620  18992   23.05  6.55   1.28 
+s5    34.85535  298.15  346   0.0     0.00  4.07e-04 0.0     0.00   0.00   0.00 
+s6    25962.0   7098.1  2070  7744.1  3.74  7.00e-03 415.5   4.23   63.68  33.69
+s7    10759.12  1559.4  764   8222.4  10.76 2.39e-02 1572.3  33147  35.23  1.43 
+s8    259.9527  612.58  492   8355.2  16.97 1.47e-03 99.9    33147  35.23  0.32 
+s10f  86596.13  32668   3595  1337.5  0.37  9.20e-03 95.1    0.10   -     -     
+s10e  96729.0   7684.6  2170  514.2   0.24  2.39e-02 99.9    0.10   35.23  35.10
+The freestream (s8) total temperature (Tt) is 17262.14 K.
+The freestream (s8) flight equivalent velocity (Ue) is 8393.93 m/s.
+Basic test time = 64.39 microseconds.
+Freestream (s8) unit Reynolds number is 394506.40 /m (related mu is 3.12e-05 Pa.s).
+Post normal shock equilibrium (s10e) unit Reynolds number is 57877.76 /m (related mu is 2.13e-04 Pa.s).
+Species in the freestream state (s8) at equilibrium (by moles):
+{'N2': 0.79, 'O2': 0.21}
+Species in the shock layer at equilibrium (s10e) (by moles):
+{'N': 0.672, 'N2': 0.0957, 'O+': 2.641e-04, 'N2+': 4.436e-05, 'O': 0.228, 'O2': 1.345e-05, 'NO': 0.00116, 'N+': 9.289e-04, 'NO+': 3.749e-04}

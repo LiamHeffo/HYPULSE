@@ -1,0 +1,29 @@
+PITOT3 Version 16-Dec-2023 doing a reflected_shock_tunnel calculation.
+Calculation mode is 'fully_theoretical'.
+Facility is 'HYPULSE_rst_Mach_8_to_10_nozzle_area_ratio_175'.
+Driver condition is 'HYPULSE_RST_M8_driver_condition'. Driver gas model is CEAGas.
+Driver gas composition is {'Ar': 0.6, 'O2': 0.133, 'H2': 0.267} (by moles) (gam = 1.41, R = 289.07 J/kg K).
+Nozzle area ratio is 175.0.
+Test gas (s1) is n2-o2-with-ions. Test gas gas model is CEAGas.
+Test gas composition is {'N2': 0.79, 'O2': 0.21} (by moles) (gam = 1.40, R = 288.20 J/kg K)
+vs1 = 2587.47 m/s, Ms1 = 7.46
+state p         T       a     v       M     rho      pitot_p stgn_p Ht     h    
+      Pa        K       m/s   m/s           kg/m^3   kPa     MPa    MJ/kg  MJ/kg
+s4    3.731e+07 3861.0  1257  0.0     0.00  33.42900 37310   37.31  3.29   3.29 
+s1    23101.3   298.15  347   0.0     0.00  0.26885  23.1    0.02   0.00   0.00 
+s2    1.566e+06 2874.2  1008  2218.1  2.20  1.88326  9640.7  17.05  5.74   3.28 
+s3    1.566e+06 1459.3  788   2218.1  2.81  3.71220  17429   43.71  3.47   1.01 
+s5    1.322e+07 4701.0  1321  0.0     0.00  9.17290  13224   13.22  7.01   7.01 
+s5d   2.540e+07 5536.3  1494  0.0     0.00  15.87400 25404   25.40  4.97   4.97 
+s6    7.559e+06 4323.0  1255  1254.8  1.00  5.76990  13397   13.40  7.03   6.24 
+s8    3245.02   967.97  611   3553.0  5.82  1.16e-02 142.2   13.40  7.03   0.72 
+s10f  125210.3  6328.5  1561  602.0   0.39  6.87e-02 138.1   0.14   -     -     
+s10e  133850.0  3905.0  1230  392.8   0.32  0.10521  142.2   0.14   7.03   6.95 
+The freestream (s8) total temperature (Tt) is 4710.25 K.
+The freestream (s8) flight equivalent velocity (Ue) is 3749.23 m/s.
+Freestream (s8) unit Reynolds number is 969936.19 /m (related mu is 4.26e-05 Pa.s).
+Post normal shock equilibrium (s10e) unit Reynolds number is 352877.23 /m (related mu is 1.17e-04 Pa.s).
+Species in the freestream state (s8) at equilibrium (by moles):
+{'N2': 0.79, 'O2': 0.21, 'NO': 2.177e-05}
+Species in the shock layer at equilibrium (s10e) (by moles):
+{'N': 8.826e-04, 'N2': 0.674, 'N2O': 3.135e-06, 'O': 0.23, 'O2': 0.0466, 'NO': 0.0482, 'NO2': 9.534e-06, 'NO+': 2.196e-06}

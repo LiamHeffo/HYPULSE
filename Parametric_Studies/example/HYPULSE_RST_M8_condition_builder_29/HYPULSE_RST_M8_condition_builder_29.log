@@ -1,0 +1,108 @@
+------------------------------------------------------------
+Running PITOT3 version: 16-Dec-2023
+------------------------------------------------------------
+Let's get started, shall we:
+Calculation mode is 'fully_theoretical'.
+Chosen facility is 'HYPULSE_rst_Mach_8_to_10_nozzle_area_ratio_175'.
+Facility type is 'reflected_shock_tunnel'.
+------------------------------------------------------------
+Setting up facility driver condition.
+Chosen driver condition is 'HYPULSE_RST_M8_driver_condition'.
+Driver gas model is CEAGas.
+Driver gas composition is {'Ar': 0.6, 'O2': 0.133, 'H2': 0.267} (by moles) (gam = 1.41, R = 289.07 J/kg K).
+Driver rupture conditions are p4 = 37.31 MPa, T4 = 3861.00 K, M_throat = 0.00.
+------------------------------------------------------------
+The configuration in the driven tube is as follows:
+test_gas_file_name =  None
+shock_tube_fill_state_name =  s1
+Test gas is n2-o2-with-ions. Test gas gas model is CEAGas.
+Shock tube fill pressure (p1) is 38535.29 Pa.
+Shock tube fill temperature (T1) is 298.15 K.
+Nozzle area ratio is 175.0.
+------------------------------------------------------------
+Facility_State(state s5: p = 17872954.49 Pa, T = 4326.04 K, rho = 1.38e+01 kg/m**3, gam = 1.15, R = 298.36 J/kg K, V = 0.00 m/s, M = 0.00)
+species in s5 at equilibrium (by moles): 
+{'N': 3.363e-04, 'N2': 0.711, 'N2O': 8.218e-05, 'O': 0.0682, 'O2': 0.117, 'NO': 0.103, 'NO2': 3.218e-04, 'NO+': 1.447e-06}
+The total enthalpy (Ht) at state s5 is 5.97 MJ/kg.
+------------------------------------------------------------
+Facility_State(state s5d: p = 27973733.50 Pa, T = 5167.73 K, rho = 1.87e+01 kg/m**3, gam = 1.40, R = 289.07 J/kg K, V = 0.00 m/s, M = 0.00)
+species in s5d at equilibrium (by moles): 
+{'Ar': 0.6, 'O2': 0.133, 'H2': 0.267}
+The total enthalpy (Ht) at state s5d is 4.59 MJ/kg.
+------------------------------------------------------------
+Starting steady expansion through the nozzle using an area ratio of 175.0
+Due to the fact that this is a reflected shock simulation, we must first expand to the throat condition (state 6).
+M6 expected is 1.0 and M6 found is 0.9921.
+M6 is just below 1.0 so it is being set to 1.0 so the code can continue.
+The velocity has also been slightly adjusted from 1178.2445 m/s to 1187.6005 m/s.
+Facility_State(state s6: p = 10169341.10 Pa, T = 3966.96 K, rho = 8.67e+00 kg/m**3, gam = 1.15, R = 295.67 J/kg K, V = 1187.60 m/s, M = 1.00)
+species in s6 at equilibrium (by moles): 
+{'N': 1.326e-04, 'N2': 0.725, 'N2O': 5.244e-05, 'O': 0.0508, 'O2': 0.135, 'NO': 0.0887, 'NO2': 2.539e-04}
+The total enthalpy (Ht) at state s6 is 5.98 MJ/kg.
+Facility_State(state s8: p = 3890.71 Pa, T = 761.66 K, rho = 1.77e-02 kg/m**3, gam = 1.36, R = 288.20 J/kg K, V = 3316.18 m/s, M = 6.08)
+species in s8 at equilibrium (by moles): 
+{'N2': 0.79, 'O2': 0.21, 'NO': 1.004e-06}
+The total enthalpy (Ht) at state s8 is 5.98 MJ/kg.
+------------------------------------------------------------
+Starting frozen normal shock calculation over the test model.
+Facility_State(state s10f: p = 164864.05 Pa, T = 5620.64 K, rho = 1.02e-01 kg/m**3, gam = 1.36, R = 288.20 J/kg K, V = 577.52 m/s, M = 0.39)
+------------------------------------------------------------
+Starting equilibrium normal shock calculation over the test model.
+Facility_State(state s10e: p = 176220.00 Pa, T = 3672.28 K, rho = 1.53e-01 kg/m**3, gam = 1.09, R = 313.77 J/kg K, V = 384.34 m/s, M = 0.33)
+species in s10e at equilibrium (by moles): 
+{'N': 3.039e-04, 'N2': 0.698, 'N2O': 4.108e-06, 'O': 0.163, 'O2': 0.0839, 'NO': 0.0552, 'NO2': 1.850e-05}
+The total enthalpy (Ht) at state s10e is 5.98 MJ/kg.
+------------------------------------------------------------
+Test completed. Printing output now.
+------------------------------------------------------------
+PITOT3 Version 16-Dec-2023 doing a reflected_shock_tunnel calculation.
+Calculation mode is 'fully_theoretical'.
+Facility is 'HYPULSE_rst_Mach_8_to_10_nozzle_area_ratio_175'.
+Driver condition is 'HYPULSE_RST_M8_driver_condition'. Driver gas model is CEAGas.
+Driver gas composition is {'Ar': 0.6, 'O2': 0.133, 'H2': 0.267} (by moles) (gam = 1.41, R = 289.07 J/kg K).
+Nozzle area ratio is 175.0.
+Test gas (s1) is n2-o2-with-ions. Test gas gas model is CEAGas.
+Test gas composition is {'N2': 0.79, 'O2': 0.21} (by moles) (gam = 1.40, R = 288.20 J/kg K)
+vs1 = 2386.88 m/s, Ms1 = 6.88
+state p         T       a     v       M     rho      pitot_p stgn_p Ht     h    
+      Pa        K       m/s   m/s           kg/m^3   kPa     MPa    MJ/kg  MJ/kg
+s4    3.731e+07 3861.0  1257  0.0     0.00  33.42900 37310   37.31  3.29   3.29 
+s1    38535.29  298.15  347   0.0     0.00  0.44848  38.5    0.04   0.00   0.00 
+s2    2.210e+06 2565.6  960   2028.4  2.11  2.98621  12806   20.76  4.84   2.78 
+s3    2.210e+06 1629.1  831   2028.4  2.44  4.69260  18697   35.08  3.22   1.16 
+s5    1.787e+07 4326.0  1248  0.0     0.00  13.84700 17873   17.87  5.97   5.97 
+s5d   2.797e+07 5167.7  1445  0.0     0.00  18.72600 27974   27.97  4.59   4.59 
+s6    1.017e+07 3967.0  1188  1187.6  1.00  8.67010  18031   18.03  5.98   5.28 
+s8    3890.715  761.66  546   3316.2  6.08  1.77e-02 187.8   18.03  5.98   0.49 
+s10f  164864.1  5620.6  1482  577.5   0.39  0.10178  182.5   0.18   -     -     
+s10e  176220.0  3672.3  1163  384.3   0.33  0.15294  187.8   0.19   5.98   5.91 
+The freestream (s8) total temperature (Tt) is 4331.79 K.
+The freestream (s8) flight equivalent velocity (Ue) is 3459.36 m/s.
+Freestream (s8) unit Reynolds number is 1622975.51 /m (related mu is 3.62e-05 Pa.s).
+Post normal shock equilibrium (s10e) unit Reynolds number is 533242.35 /m (related mu is 1.10e-04 Pa.s).
+Species in the freestream state (s8) at equilibrium (by moles):
+{'N2': 0.79, 'O2': 0.21, 'NO': 1.004e-06}
+Species in the shock layer at equilibrium (s10e) (by moles):
+{'N': 3.039e-04, 'N2': 0.698, 'N2O': 4.108e-06, 'O': 0.163, 'O2': 0.0839, 'NO': 0.0552, 'NO2': 1.850e-05}
+This FacilityState does not have a reference gas state which is required to calculate enthalpy.
+None will be returned.
+This FacilityState does not have a reference gas state which is required to calculate the flight equivalent velocity.
+None will be returned.
+------------------------------------------------------------
+Exporting facility states data to the json file HYPULSE_RST_M8_condition_builder_29.json.
+------------------------------------------------------------
+math domain error
+Failed to calculate flight equivalent velocity.
+self.flight_equivalent_velocity will be set to None.
+Cannot return the flight equivalent velocity as PITOT3 failed to calculate it.
+Will return None.
+This FacilityState does not have a reference gas state which is required to calculate enthalpy.
+None will be returned.
+This FacilityState does not have a reference gas state which is required to calculate the flight equivalent velocity.
+None will be returned.
+------------------------------------------------------------
+Removing temporary files created during the running of the program.
+------------------------------------------------------------
+------------------------------------------------------------
+Run finished successfully.
+------------------------------------------------------------
