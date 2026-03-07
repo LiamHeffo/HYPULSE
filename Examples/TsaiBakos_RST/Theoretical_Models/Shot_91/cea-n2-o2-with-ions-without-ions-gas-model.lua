@@ -1,4 +1,4 @@
--- modified gas model made by PITOT3 on the 21/06/2024 17:37:39 without ions for low temperature operation
+-- modified gas model made by PITOT3 on the 07/08/2025 14:43:56 without ions for low temperature operation
 
 model = "CEAGas"
 

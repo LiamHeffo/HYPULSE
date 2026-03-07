@@ -130,13 +130,20 @@ print(state10e_composition)
 print('-'*60)
 print('\n')
 print('-'*60)
-print('Second Run through with scaling factor')
+print('Second Run through using CJ equivalent conditions')
 print('\n')
 print('\n')
 #
+
+p4CJ = 34.759e6 # Pa,
+T4CJ = 4256 # K
+v4CJ = 0 # m/s
+
+print('\n\n\n')
+
 driver_dict = {'driver_condition_name' :'HYPULSE test', 'driver_condition_type' : 'empirical',
                'driver_gas_model' : driver_gas_model, 'driver_fill_gas_name' : driver_fill_gas_name,
-               'p4' : p4CJ, 'T4' : T4CJ, 'v4': 0, 'M_throat' : 0.0}
+               'p4' : p4CJ, 'T4' : T4CJ, 'v4': v4CJ, 'M_throat' : 0.0}
 
 config_dict = {'mode':'fully_theoretical','output_filename':'TsaiBakos_Shot_68',
                'facility':facility_name,

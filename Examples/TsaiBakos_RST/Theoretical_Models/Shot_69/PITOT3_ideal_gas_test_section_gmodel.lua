@@ -1,4 +1,4 @@
--- this is a dummy ideal gas gas model made by PITOT3 on the 23/06/2024 21:49:35
+-- this is a dummy ideal gas gas model made by PITOT3 on the 07/08/2025 15:12:34
 -- purely to perform a frozen shock over the test model.
 -- Do not use it for anything else! As the entropy, viscosity and 
 -- thermal conductivity values are just dummy values for air.

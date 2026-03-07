@@ -1,4 +1,4 @@
--- this is a dummy ideal gas gas model made by PITOT3 on the 23/06/2024 21:53:22
+-- this is a dummy ideal gas gas model made by PITOT3 on the 04/10/2025 15:59:26
 -- purely to perform a frozen shock over the test model.
 -- Do not use it for anything else! As the entropy, viscosity and 
 -- thermal conductivity values are just dummy values for air.
@@ -8,7 +8,7 @@ model = "IdealGas"
 IdealGas = {
     speciesName = 'dummy PITOT3 test section species',
     mMass = 0.02885,
-    gamma = 1.3711011440765153,
+    gamma = 1.3704809741349828,
     entropyRefValues = {
         s1 = 0.0,
         T1 = 298.15,

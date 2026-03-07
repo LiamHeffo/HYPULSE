@@ -38,42 +38,45 @@ p400, T400, p4CJ, T4CJ = HYPULSE_driver_equivalentconditions(p4, T4, q4, p100, T
 p100_p1 = 20.38
 p1 = p100/p100_p1 # Pa
 
-# I'm using the state 400 values, but in PITOT3 the driver is state 4...
-driver_dict = {'driver_condition_name' :'HYPULSE test', 'driver_condition_type' : 'empirical',
-               'driver_gas_model' : driver_gas_model, 'driver_fill_gas_name' : driver_fill_gas_name,
-               'p4' : p400, 'T4' : T400, 'v4': 0, 'M_throat' : 0.0}
+# # I'm using the state 400 values, but in PITOT3 the driver is state 4...
+# driver_dict = {'driver_condition_name' :'HYPULSE test', 'driver_condition_type' : 'empirical',
+#                'driver_gas_model' : driver_gas_model, 'driver_fill_gas_name' : driver_fill_gas_name,
+#                'p4' : p400, 'T4' : T400, 'v4': 0, 'M_throat' : 0.0}
 
-config_dict = {'mode':'fully_theoretical','output_filename':'TsaiBakos_Shot_82',
-               'facility':facility_name,
-               'driver_condition':'custom_from_dict', 'driver_dict':driver_dict,
-               'test_gas_gas_model':'CEAGas', 'test_gas_name':'n2-o2-with-ions',
-               'p1':p1, 'p5':None,
-                'vs1_tolerance' : 1.0e-4}
+# config_dict = {'mode':'fully_theoretical','output_filename':'TsaiBakos_Shot_82',
+#                'facility':facility_name,
+#                'driver_condition':'custom_from_dict', 'driver_dict':driver_dict,
+#                'test_gas_gas_model':'CEAGas', 'test_gas_name':'n2-o2-with-ions',
+#                'p1':p1, 'p5':None,
+#                 'vs1_tolerance' : 1.0e-4}
 
-config_data, gas_path, object_dict, states_dict = run_pitot3(config_dict = config_dict)
+# config_data, gas_path, object_dict, states_dict = run_pitot3(config_dict = config_dict)
 
-#----------------------------------------------------------------------------------------------
-# the code that lets us pull some useful things out of the output of the code
+# #----------------------------------------------------------------------------------------------
+# # the code that lets us pull some useful things out of the output of the code
 
-# the object dictionary has all of the states we need
-# 'driver' is the driver
-# 'shock_tube' is shock tube
-# 'acceleration_tube' is the acceleration tube
-# 'nozzle' is the nozzle
-# 'test_section' is the test section
-# there are also states for the diaphragms etc. as well
+# # the object dictionary has all of the states we need
+# # 'driver' is the driver
+# # 'shock_tube' is shock tube
+# # 'acceleration_tube' is the acceleration tube
+# # 'nozzle' is the nozzle
+# # 'test_section' is the test section
+# # there are also states for the diaphragms etc. as well
 
-driver_object = object_dict['driver']
-shock_tube_object = object_dict['shock_tube']
-test_section_object = object_dict['test_section']
+# driver_object = object_dict['driver']
+# shock_tube_object = object_dict['shock_tube']
+# test_section_object = object_dict['test_section']
 
-# lets us start by getting the shock speeds:
+# # lets us start by getting the shock speeds:
 
-vs1 = shock_tube_object.get_shock_speed()
+# vs1 = shock_tube_object.get_shock_speed()
 
-print('-'*60)
-print("The calculated shock speeds are:")
-print(f"vs1 = {vs1:.2f} m/s")
+# print('-'*60)
+# print("The calculated shock speeds are:")
+# print(f"vs1 = {vs1:.2f} m/s")
+
+print(f"P4CJ = {p4CJ}")
+print(f"T4CJ = {T4CJ}")
 
 # I'm using the state 400 values, but in PITOT3 the driver is state 4...
 driver_dict = {'driver_condition_name' :'HYPULSE test', 'driver_condition_type' : 'empirical',

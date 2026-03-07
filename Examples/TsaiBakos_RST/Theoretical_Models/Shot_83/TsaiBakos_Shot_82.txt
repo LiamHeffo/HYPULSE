@@ -6,24 +6,24 @@ Driver gas composition is {'Ar': 0.55, 'O2': 0.15, 'H2': 0.3} (by moles) (gam = 
 Nozzle area ratio is 175.0.
 Test gas (s1) is n2-o2-with-ions. Test gas gas model is CEAGas.
 Test gas composition is {'N2': 0.79, 'O2': 0.21} (by moles) (gam = 1.40, R = 288.20 J/kg K)
-vs1 = 2420.11 m/s, Ms1 = 6.98
+vs1 = 2102.00 m/s, Ms1 = 6.06
 state p         T       a     v       M     rho      pitot_p stgn_p Ht     h    
       Pa        K       m/s   m/s           kg/m^3   kPa     MPa    MJ/kg  MJ/kg
-s4    2.111e+07 3613.9  1240  0.0     0.00  19.23200 21109   21.11  3.28   3.28 
+s4    9.550e+06 3613.9  1240  0.0     0.00  8.70110  9550.3  9.55   3.28   3.28 
 s1    20140.13  298.15  347   0.0     0.00  0.23439  20.1    0.02   0.00   0.00 
-s2    1.189e+06 2613.5  967   2060.2  2.13  1.57590  6975.5  11.55  4.99   2.86 
-s3    1.189e+06 1531.3  822   2060.0  2.51  2.55610  10503   20.91  3.27   1.15 
-s5    9.673e+06 4312.1  1250  0.0     0.00  7.44360  9672.6  9.67   6.13   6.13 
-s5d   1.553e+07 4867.3  1430  0.0     0.00  10.50300 15526   15.53  4.64   4.64 
-s6    5.527e+06 3970.2  1190  1190.4  1.00  4.66880  9779.7  9.78   6.14   5.43 
-s8    2179.862  798.87  558   3350.7  6.00  9.47e-03 102.6   9.78   6.14   0.53 
-s10f  90053.2   5721.1  1493  580.9   0.39  5.46e-02 99.6    0.10   -     -     
-s10e  96466.0   3626.1  1162  378.7   0.33  8.38e-02 102.6   0.10   6.14   6.07 
-The freestream (s8) total temperature (Tt) is 4319.25 K.
-The freestream (s8) flight equivalent velocity (Ue) is 3504.20 m/s.
-Freestream (s8) unit Reynolds number is 847973.78 /m (related mu is 3.74e-05 Pa.s).
-Post normal shock equilibrium (s10e) unit Reynolds number is 289041.94 /m (related mu is 1.10e-04 Pa.s).
+s2    889100.0  2118.1  880   1763.7  2.00  1.45639  4740.4  6.95   3.71   2.15 
+s3    889100.0  1789.1  886   1763.8  1.99  1.63620  5097.0  7.02   2.96   1.40 
+s5    6.769e+06 3641.7  1133  0.0     0.00  6.34360  6768.7  6.77   4.63   4.63 
+s5d   7.930e+06 4421.9  1366  0.0     0.00  5.90470  7930.1  7.93   4.15   4.15 
+s6    3.831e+06 3326.7  1081  1081.4  1.00  3.95560  6806.0  6.81   4.64   4.06 
+s8    1278.79   538.65  463   2964.3  6.40  8.24e-03 69.3    6.81   4.64   0.25 
+s10f  60593.42  4609.1  1355  535.3   0.40  4.56e-02 67.4    0.07   -     -     
+s10e  64732.0   3202.3  1061  365.9   0.34  6.67e-02 69.3    0.07   4.64   4.57 
+The freestream (s8) total temperature (Tt) is 3644.95 K.
+The freestream (s8) flight equivalent velocity (Ue) is 3046.31 m/s.
+Freestream (s8) unit Reynolds number is 856218.99 /m (related mu is 2.85e-05 Pa.s).
+Post normal shock equilibrium (s10e) unit Reynolds number is 248282.87 /m (related mu is 9.84e-05 Pa.s).
 Species in the freestream state (s8) at equilibrium (by moles):
-{'N2': 0.79, 'O2': 0.21, 'NO': 1.967e-06}
+{'N2': 0.79, 'O2': 0.21}
 Species in the shock layer at equilibrium (s10e) (by moles):
-{'N': 3.343e-04, 'N2': 0.692, 'N2O': 2.705e-06, 'O': 0.185, 'O2': 0.0734, 'NO': 0.0495, 'NO2': 1.173e-05}
+{'N': 5.015e-05, 'N2': 0.729, 'N2O': 2.015e-06, 'O': 0.0967, 'O2': 0.129, 'NO': 0.0453, 'NO2': 1.457e-05}

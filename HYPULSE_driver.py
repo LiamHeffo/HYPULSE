@@ -20,6 +20,7 @@ from sdtoolbox.thermo import soundspeed_fr,soundspeed_eq
 from sdtoolbox.postshock import CJspeed,PostShock_eq
 from matplotlib.ticker import MaxNLocator
 
+
 # Initial state specification:
 # P1 = Initial Pressure  
 # T1 = Initial Temperature 
@@ -434,10 +435,12 @@ def HYPULSE_driver_equivalentconditions(P4, T4, q4, P100, T100, q100):
 	# State 3:
 	u3 = u400
 	T3 = T4*(P3/P4)**((gamma4-1)/gamma4)
+	a3 = a4*(P3/P4)**((gamma4-1)/(2*gamma4))
 	print('State 3:')
 	print(' Pressure %.2f (MPa)' % (P3*10**(-6)))
 	print(' Velocity %.2f (m/s)' % u3)
 	print(' Temperature %.2f (K)' % (T3))
+	print(' Sound speed %.2f (m/s)' % (a3))
 
 	# Calculating cold-driver-equivalent numbers from Lu:
 	pe = P400*(1 + (gamma400_eq - 1)/2*(u400/a400))**(2*gamma400_eq/(gamma400_eq - 1))
@@ -495,7 +498,7 @@ def HYPULSE_driver_equivalentconditions(P4, T4, q4, P100, T100, q100):
 	# 	k = k + 1
 	# outfile.close()
 	
-	return Pe, Te, pe2, Te2
+	return pe, Te, pe2, Te2
 
 
 def HYPULSE_driver_exp_tuned(P4, T4, q4, P100, T100, q100):

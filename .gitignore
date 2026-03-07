@@ -1,0 +1,20 @@
+# CEA temporary files
+thermo.inp
+thermo.lib
+thermo.out
+tmp.inp
+tmp.out
+trans.inp
+trans.lib
+trans.out
+
+# Python cache
+__pycache__/
+*.pyc
+
+# PDF files
+*.pdf
+
+# Thesis and figures (maintained as a separate repository)
+Thesis/
+Thesis_Figures/

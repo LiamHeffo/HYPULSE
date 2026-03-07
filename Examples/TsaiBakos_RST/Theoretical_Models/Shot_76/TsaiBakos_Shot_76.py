@@ -14,12 +14,15 @@ Liam Heffernan 13/01/24
 
 from pitot3 import run_pitot3
 from HYPULSE_driver import HYPULSE_driver
+from pitot3_utils.pitot3_classes import eilmer4_CEAGas_input_file_creator
 
 
 driver_gas_model = 'CEAGas-preset'
 driver_fill_gas_name = '556-n2-296-h2-148-o2'
 
 facility_name = 'HYPULSE_rst_Mach_8_to_10_nozzle_area_ratio_175'
+
+# Code to automatically create lua gas file for cea
 
 		# COLD DRIVER:
 q4 = 'HE:100'
